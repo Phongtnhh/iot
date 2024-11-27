@@ -1,0 +1,9 @@
+
+.table-row__head{
+    height: 40px;
+}
+.table-row__body{
+    transition: all 0.1s linear;
+    height: 40px;
+
+}

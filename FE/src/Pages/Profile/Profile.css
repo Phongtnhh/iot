@@ -1,0 +1,130 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+}
+
+.profile {
+    background-image: url("https://thatnhucuocsong.com.vn/wp-content/uploads/2022/05/Hinh-anh-anime-phong-canh-thien-nhien-tuyet-dep.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Thẻ card chứa thông tin profile */
+.profile__card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Hình ảnh profile */
+.profile__image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 4px solid #ffb6c1; /* Viền màu hồng nhạt */
+}
+
+/* Thông tin cá nhân */
+.profile__name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.profile__position {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+/* Các liên kết mạng xã hội */
+.profile__social {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.profile__social a {
+    color: #555;
+    font-size: 1.2rem;
+    transition: color 0.3s;
+}
+
+.profile__social a:hover {
+    color: #ff69b4; /* Màu hồng tươi khi hover */
+}
+
+/* Các liên kết GitHub và API doc */
+.profile__social2 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.profile__git, .profile__api {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.profile__git label,
+.profile__api label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.profile__git a,
+.profile__api a {
+    width: 100%;
+    text-decoration: none;
+}
+
+.profile__git input,
+.profile__api input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.profile__git input:hover,
+.profile__api input:hover {
+    background-color: #ffe6f0; /* Màu hồng nhạt khi hover */
+}
+
+/* Responsive cho màn hình nhỏ */
+@media (max-width: 400px) {
+    .profile__card {
+        width: 100%;
+    }
+
+    .profile__image img {
+        width: 120px;
+        height: 120px;
+    }
+}
